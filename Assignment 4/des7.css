@@ -1,0 +1,53 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Nav container */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1rem 0;
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+  
+  /* Nav links */
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent breaking words */
+  }
+  
+  /* Hover effects */
+  nav a:hover {
+    color: #ffa500;      /* Orange color */
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  /* Responsive: stack nav links vertically on small screens */
+  @media (max-width: 480px) {
+    nav {
+      justify-content: center;
+    }
+    nav a {
+      flex: 1 1 100%;      /* Full width */
+      text-align: center;
+      padding: 0.75rem 0;
+      border-top: 1px solid #444;
+    }
+    nav a:first-child {
+      border-top: none;
+    }
+  }
+  

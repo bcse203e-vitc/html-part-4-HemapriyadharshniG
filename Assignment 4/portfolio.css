@@ -1,0 +1,76 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Gradient header */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 0.3em;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+header p {
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 1.5em;
+  letter-spacing: 1.2px;
+}
+
+/* Button styling */
+header button {
+  background-color: #fff;
+  color: #764ba2;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(118, 75, 162, 0.6);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #764ba2;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Gallery section */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 0.8;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  transition: opacity 0.3s ease;
+}
+
+.gallery img:hover {
+  opacity: 1;
+}

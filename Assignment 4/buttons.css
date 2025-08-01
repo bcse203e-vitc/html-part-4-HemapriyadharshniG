@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Base button styles */
+  .btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    user-select: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  }
+  
+  /* Individual button colors */
+  .save {
+    background-color: #28a745;
+  }
+  
+  .cancel {
+    background-color: #dc3545;
+  }
+  
+  .submit {
+    background-color: #007bff;
+  }
+  
+  /* Hover effect: color change + scale */
+  .btn:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+  }
+  
+  /* Click (active) effect: temporary box-shadow */
+  .btn:active {
+    box-shadow: 0 0 15px 5px rgba(255,255,255,0.7);
+    transform: scale(0.95);
+    transition: box-shadow 0.1s ease, transform 0.1s ease;
+  }
+  

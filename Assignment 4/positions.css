@@ -1,0 +1,63 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  height: 1500px; /* To allow scrolling */
+  background-color: #f0f0f0;
+}
+
+.wrapper {
+  position: relative; /* Needed for absolute positioning of child */
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #ccc;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  height: 300px;
+}
+
+/* Common box styles */
+.box {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+/* Static box: normal flow */
+.static {
+  background-color: #3498db; /* Blue */
+  position: static; /* Default, can omit */
+}
+
+/* Fixed box: stays top right */
+.fixed {
+  background-color: #e74c3c; /* Red */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* Relative box: shifted relative to its normal spot */
+.relative {
+  background-color: #2ecc71; /* Green */
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+/* Absolute box: positioned inside wrapper */
+.absolute {
+  background-color: #f1c40f; /* Yellow */
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  border-radius: 8px;
+}
